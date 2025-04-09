@@ -1,0 +1,17 @@
+Security-Robot-Facial-Recognition/
+│
+├── esp32-cam/
+│   ├── face_detection.ino          # ESP32-CAM face detection code
+│   └── README.md                   # Documentation for ESP32-CAM
+│
+├── nodeMCU/
+│   ├── api_integration.ino         # NodeMCU API communication code
+│   └── README.md                   # Documentation for NodeMCU
+│
+├── cloud/
+│   ├── api_functions.py            # Python script for API integration and face recognition
+│   └── README.md                   # Documentation for Cloud (if using Python or Node.js)
+│
+├── .gitignore                      # To exclude unnecessary files (e.g., build files, sensitive data)
+├── README.md                       # Main documentation file for your entire project
+└── LICENSE                         # License file (e.g., MIT License)
