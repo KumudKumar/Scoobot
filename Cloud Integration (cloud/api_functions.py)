@@ -1,0 +1,24 @@
+import requests
+import json
+
+def send_to_social_media(image_url):
+    # Example API request to send the image to a platform (e.g., Twitter, Facebook)
+    api_url = 'https://api.socialmedia.com/upload'  # Replace with actual API URL
+    headers = {
+        'Authorization': 'Bearer <your_api_token>',
+        'Content-Type': 'application/json',
+    }
+
+    data = {
+        'image_url': image_url
+    }
+
+    response = requests.post(api_url, headers=headers, json=data)
+    if response.status_code == 200:
+        print("Image uploaded successfully!")
+    else:
+        print("Failed to upload image:", response.status_code)
+
+# Example usage
+image_url = 'https://cloudimage.com/face123.jpg'
+send_to_social_media(image_url)
