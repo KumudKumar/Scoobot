@@ -1,0 +1,17 @@
+Hardware:
+
+ESP32-CAM Module: Used for capturing images and video for face detection.
+
+NodeMCU (ESP8266): For handling communication with external APIs (social media).
+
+Arduino: For handling low-level I/O operations, motors, and sensors.
+
+Software:
+
+Face Detection: Using OpenCV or an inbuilt algorithm to detect human faces.
+
+Social Media Integration: APIs to send the captured face image to social media platforms and compare against public profiles.
+
+Database: Use an external service like Firebase to store previously detected faces and matched identities.
+
+Security Features: The robot will take action (e.g., alerting, storing images, or even locking/unlocking doors).
